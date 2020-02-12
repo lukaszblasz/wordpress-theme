@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
-
+const LiveReloadPlugin = require('webpack-livereload-plugin');
+const isProduction = process.env.NODE_ENV;
 
 module.exports = {
   entry: {
@@ -25,11 +25,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'all.css',
     }),
+    (!isProduction) && new LiveReloadPlugin({
+      protocol: 'http',
+      appendScriptTag: true
+    })
   ],
-  devServer: {
-    contentBase: path.join(__dirname, './'),
-    compress: true,
-    hot: true,
-    port: 9000
-  }
 };

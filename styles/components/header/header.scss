@@ -1,0 +1,6 @@
+.header {
+  background-color: map-get($colors, 'red');
+  padding: map-get($spacings, 'medium');
+  display: flex;
+  align-items: space-between;
+}

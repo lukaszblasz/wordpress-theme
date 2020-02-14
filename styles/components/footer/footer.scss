@@ -1,0 +1,26 @@
+.footer {
+  background-color: map-get($colors, white);
+  padding: map-get($spacings, 'big');
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .footer-top {
+    text-align: center;
+    padding: map-get($spacings, 'big');
+  }
+
+  .footer-bottom {
+    padding: map-get($spacings, 'big');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}

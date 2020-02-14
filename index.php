@@ -7,20 +7,22 @@
 get_header();
 ?>
 
-<main class="site-content" role="main">
+<main class="content" role="main">
+  <div clas="content-inner">
 
-	<?php
+    <?php
 
-	if ( have_posts() ) {
+    if ( have_posts() ) {
 
-		while ( have_posts() ) {
-      the_post();
-      
-      get_template_part( 'template-parts/page-content' );
-		}
-	}
+      while ( have_posts() ) {
+        the_post();
+        
+        get_template_part( 'template-parts/page-content' );
+      }
+    }
 
-	?>
+    ?>
+  </div>
 
 </main>
 

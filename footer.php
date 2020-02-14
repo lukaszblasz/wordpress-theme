@@ -1,18 +1,15 @@
-  <footer>
-    <nav>
-      <?php 
-        if ( has_nav_menu( 'footer' ) ) {
-          wp_nav_menu(
-            array(
-              'container'  => '',
-              'items_wrap' => '%3$s',
-              'theme_location' => 'footer',
-            )
-          );
-        }
-      ?>
-    </nav>
-		<?php wp_footer(); ?>
-  </footer>
+    <footer class="footer">
+      <div class="wrap-content">
+        <div class="footer-top">
+          <?php dynamic_sidebar( 'footer-top-widgets' ); ?>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <?php dynamic_sidebar( 'footer-bottom-widgets' ); ?>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <?php wp_footer(); ?>
 </body>
 </html>

@@ -1,5 +1,15 @@
-@import '~normalize.css';
+@import "~bootstrap/dist/css/bootstrap.css";
+
 @import "common/variables";
 
 @import "common/base";
+
+// header
 @import "components/header/header";
+@import "components/main-navigation/navigation";
+
+// content
+@import "components/content/content";
+
+// footer
+@import "components/footer/footer";

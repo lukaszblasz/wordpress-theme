@@ -4,10 +4,14 @@ const isProduction = process.env.NODE_ENV;
 
 module.exports = {
   entry: {
-    entry: __dirname + '/index.js'
+    all: __dirname + '/index.ts',
+    editor: __dirname + '/styles/editor/editor.scss'
   },
   output: {
-    filename: 'all.js'
+    filename: '[name].js'
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
   },
   module: {
     rules: [
@@ -19,15 +23,20 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'all.css',
+      filename: '[name].css',
     }),
     (!isProduction) && new LiveReloadPlugin({
       protocol: 'http',
       appendScriptTag: true
-    })
+    }),
   ],
 };

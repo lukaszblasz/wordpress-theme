@@ -1,6 +1,7 @@
+
 <?php get_header(); ?>
 
-<main class="site-content" role="main">
+<main class="content" role="main">
   <h3>Search query: <?php get_search_query() ?></h3>
   <div class="search-results">
     <?php 

@@ -6,22 +6,21 @@
 
 get_header();
 ?>
+<main class="content" role="main">
+  <div class="content-inner">
+    <?php
 
-<main class="site-content" role="main">
-  <h1>This is homepage template</h1>
-	<?php
+    if ( have_posts() ) {
 
-	if ( have_posts() ) {
+      while ( have_posts() ) {
+        the_post();
+        
+        get_template_part( 'template-parts/page-content' );
+      }
+    }
 
-		while ( have_posts() ) {
-      the_post();
-      
-      get_template_part( 'template-parts/page-content' );
-		}
-	}
-
-	?>
-
+    ?>
+  </div>
 </main>
 
 <?php get_footer(); ?>

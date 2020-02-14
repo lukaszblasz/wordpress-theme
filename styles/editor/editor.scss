@@ -1,0 +1,11 @@
+
+.wp-block {
+  max-width: 100%;
+
+  @import "./../index.scss";
+}
+
+.block-editor-block-list__layout {
+  padding-left: 0;
+  padding-right: 0;
+}

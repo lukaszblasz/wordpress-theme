@@ -12,4 +12,7 @@
   // initialize all menus
   include_once( get_template_directory() . '/function-parts/menus.php' );
 
+  // initialize widgets/sidebars
+  include_once( get_template_directory() . '/function-parts/widgets.php' );
+
 ?>

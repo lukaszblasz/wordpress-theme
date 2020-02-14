@@ -1,9 +1,24 @@
 $colors: (
-  red: red
+  white: #ffffff,
+  graylight: #e6e6e6
 );
 
 $spacings: (
   small: 5px,
   medium: 10px,
-  big: 20px
+  big: 20px,
+  huge: 40px
 );
+
+// this overrides bootstrap default breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$desktopHeaderHeight: 120px;
+$contentWrapper: 1200px;
+

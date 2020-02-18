@@ -10225,8 +10225,7 @@ html {
   height: 100%; }
 
 body {
-  height: 100%;
-  background-color: #e6e6e6; }
+  height: 100%; }
 
 img {
   max-width: 100%;
@@ -10247,7 +10246,8 @@ img {
   position: fixed;
   width: 100%;
   height: 120px;
-  z-index: 100; }
+  z-index: 100;
+  border-bottom: 1px solid #e6e6e6; }
 
 .header-content {
   display: flex;
@@ -10257,8 +10257,25 @@ img {
   .header-content .logo-wrapper {
     max-width: 100px; }
 
+.main-navigation a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #181c2e;
+  transition: color 0.5s; }
+  .main-navigation a:hover {
+    text-decoration: none;
+    color: #f90045; }
+
+.main-navigation ul {
+  display: flex;
+  padding: 0;
+  flex-direction: row; }
+
 .main-navigation li {
-  list-style: none; }
+  list-style: none;
+  padding: 0 10px; }
+  .main-navigation li li {
+    display: none; }
 
 .content {
   padding-top: 120px;

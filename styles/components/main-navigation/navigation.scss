@@ -1,5 +1,30 @@
 .main-navigation {
+
+  a {
+    font-size: map-get($fontSizes, 'large');
+    font-weight: bold;
+    color: map-get($colors, black);
+    transition: color 0.5s;
+
+    &:hover {
+      text-decoration: none;
+      color: map-get($colors, red);
+    }
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+
+  }
+
   li {
     list-style: none;
+    padding: 0 map-get($spacings, 'medium');
+
+    li {
+      display: none;
+    }
   }
 }

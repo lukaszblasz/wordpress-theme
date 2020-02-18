@@ -1,6 +1,8 @@
 $colors: (
   white: #ffffff,
-  graylight: #e6e6e6
+  black: #181c2e,
+  graylight: #e6e6e6,
+  red: #f90045,
 );
 
 $spacings: (
@@ -8,6 +10,13 @@ $spacings: (
   medium: 10px,
   big: 20px,
   huge: 40px
+);
+
+$fontSizes: (
+  small: 12px,
+  normal: 14px,
+  medium: 16px,
+  large: 20px
 );
 
 // this overrides bootstrap default breakpoints

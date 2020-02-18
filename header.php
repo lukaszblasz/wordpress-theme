@@ -20,7 +20,8 @@
                 }
               ?>
             </div>
-            <nav>
+            <nav class="main-navigation">
+              <ul>
               <?php 
                 if ( has_nav_menu( 'primary' ) ) {
                   wp_nav_menu(
@@ -32,6 +33,7 @@
                   );
                 }
               ?>
+              </ul>
             </nav>
             <div>
               <?php get_template_part( 'template-parts/search-form' ); ?>

@@ -4,7 +4,6 @@ html {
 
 body {
   height: 100%;
-  background-color: map-get($colors, graylight);
 }
 
 img {
@@ -24,4 +23,8 @@ img {
     margin: 0 auto;
     padding: map-get($spacings, 'huge');
   }
+}
+
+.btn.btn-default {
+  background-color: map-get($colors, 'red');
 }

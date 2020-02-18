@@ -10226,8 +10226,7 @@ a.text-dark:hover, a.text-dark:focus {
   .wp-block html {
     height: 100%; }
   .wp-block body {
-    height: 100%;
-    background-color: #e6e6e6; }
+    height: 100%; }
   .wp-block img {
     max-width: 100%;
     height: auto; }
@@ -10244,7 +10243,8 @@ a.text-dark:hover, a.text-dark:focus {
     position: fixed;
     width: 100%;
     height: 120px;
-    z-index: 100; }
+    z-index: 100;
+    border-bottom: 1px solid #e6e6e6; }
   .wp-block .header-content {
     display: flex;
     align-items: center;
@@ -10252,8 +10252,23 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 10px; }
     .wp-block .header-content .logo-wrapper {
       max-width: 100px; }
+  .wp-block .main-navigation a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #181c2e;
+    transition: color 0.5s; }
+    .wp-block .main-navigation a:hover {
+      text-decoration: none;
+      color: #f90045; }
+  .wp-block .main-navigation ul {
+    display: flex;
+    padding: 0;
+    flex-direction: row; }
   .wp-block .main-navigation li {
-    list-style: none; }
+    list-style: none;
+    padding: 0 10px; }
+    .wp-block .main-navigation li li {
+      display: none; }
   .wp-block .content {
     padding-top: 120px;
     min-height: 400px;
